@@ -9,7 +9,7 @@ public class ISSOutboundTransportService extends TransportServiceBase
 {
   public ISSOutboundTransportService()
   {
-    definition = new XmlTransportDefinition(getResourceAsStream("sample-outbound-transport-definition.xml"));
+    definition = new XmlTransportDefinition(getResourceAsStream("sample-outbound-transport-definition.xml")); //using the original example
 //    definition = getTransportDefinition();
   }
 
