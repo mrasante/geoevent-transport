@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" >
+	<bean id="issInboundTransportServiceBean" class="com.esri.support.iss.gep.transport.ISSInboundTransportService" activation="eager">
+		<property name="bundleContext" ref="blueprintBundleContext"/>
+	</bean>
+	<bean id="issOutboundTransportServiceBean" class="com.esri.support.iss.gep.transport.ISSOutboundTransportService" activation="eager">
+		<property name="bundleContext" ref="blueprintBundleContext"/>
+	</bean>
+	<service id="issInboundTransportService" ref="issInboundTransportServiceBean" interface="com.esri.ges.transport.TransportService"/>
+	<service id="issOutboundTransportService" ref="issOutboundTransportServiceBean" interface="com.esri.ges.transport.TransportService"/>
+</blueprint>

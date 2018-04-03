@@ -1,0 +1,12 @@
+<transport name="ISSInboundTransport" label="${com.esri.support.iss.gep.iss-transport.TRANSPORT_IN_LABEL}" contact="yourname@yourcompany.com" version="${project.version}" domain="com.esri.support.iss.gep.transport.inbound" type="inbound">
+	<description>${com.esri.support.iss.gep.iss-transport.TRANSPORT_IN_DESC}</description>
+	<propertyDefinitions>
+		<propertyDefinition propertyName="eventSize" label="${com.esri.support.iss.gep.iss-transport.TRANSPORT_IN_EVENT_SIZE_LBL}"
+			description="${com.esri.support.iss.gep.iss-transport.TRANSPORT_IN_EVENT_SIZE_DESC}"
+			propertyType="Integer" defaultValue="10" mandatory="true" readOnly="false" />
+		<propertyDefinition propertyName="eventRate" label="${com.esri.support.iss.gep.iss-transport.TRANSPORT_IN_EVENT_RATE_LBL}"
+			description="${com.esri.support.iss.gep.iss-transport.TRANSPORT_IN_EVENT_RATE_DESC}"
+			propertyType="Integer" defaultValue="1" mandatory="true" readOnly="false">
+		</propertyDefinition>
+	</propertyDefinitions>
+</transport>

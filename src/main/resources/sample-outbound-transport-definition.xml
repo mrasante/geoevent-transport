@@ -1,0 +1,4 @@
+<transport name="ISSOutboundTransport" label="${com.esri.support.iss.gep.iss-transport.TRANSPORT_OUT_LABEL}" contact="yourname@yourcompany.com" version="${project.version}" domain="com.esri.support.iss.gep.transport.outbound" type="outbound">
+	<description>${com.esri.support.iss.gep.iss-transport.TRANSPORT_OUT_DESC}</description>
+	<propertyDefinitions/>
+</transport>
